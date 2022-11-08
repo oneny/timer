@@ -1,0 +1,140 @@
+/* Resets */
+body,
+header,
+h1,
+h2,
+h3,
+main,
+section,
+ul,
+li,
+button,
+div,
+input,
+span,
+strong {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+strong {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* PC, 모바일용으로 사용된 이미지 내에서 의미있는 텍스트의 대체텍스트를 제공할 떄 */
+.ir {
+  display: block;
+  overflow: hidden;
+  font-size: 1px;
+  line-height: 0;
+  text-indent: -9999px;
+  color: transparent;
+}
+
+/* Components */
+body {
+  background: radial-gradient(
+      96.74% 276.79% at 3.59% 5.28%,
+      #f0f4ff 0%,
+      #a5b6ee 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* header */
+.tit-header {
+  margin-top: 72px;
+  margin-bottom: 60px;
+}
+
+.tit-header .tit-img {
+  max-width: 244px;
+  height: 48px;
+  margin: 0 auto;
+  background-image: url("../img/weniv-logo.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* main */
+
+.cont-main {
+  display: flex;
+  justify-content: center;
+  background-color: aquamarine;
+}
+
+.cont-main .cont-timer {
+  padding: 48px 44px 40px;
+  background: linear-gradient(144.07deg, #5572bb 2.13%, #374b7c 102.97%);
+  box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+  border-radius: 16px;
+}
+
+.cont-main .cont-timer h2 {
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #3D538A;
+}
+
+.cont-main .cont-timer .list-timer {
+  display: flex;
+  justify-content: center;
+  column-gap: 22px;
+  padding-top: 23px;
+}
+
+.list-timer li .tit-timer {
+  text-align: center;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #a5b6ee;
+}
+
+.item-timer {
+  position: relative;
+}
+
+
+.item-timer .inp-hour,
+.item-timer .inp-min,
+.item-timer .inp-sec {
+  width: 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: transparent;
+  border: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #fff;
+}
