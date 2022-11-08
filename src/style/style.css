@@ -74,7 +74,6 @@ body {
 .cont-main {
   display: flex;
   justify-content: center;
-  background-color: aquamarine;
 }
 
 .cont-main .cont-timer {
@@ -94,7 +93,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   padding-bottom: 23px;
-  border-bottom: 1px solid #3D538A;
+  border-bottom: 1px solid #3d538a;
 }
 
 .cont-main .cont-timer .list-timer {
@@ -120,7 +119,6 @@ body {
   position: relative;
 }
 
-
 .item-timer .inp-hour,
 .item-timer .inp-min,
 .item-timer .inp-sec {
@@ -137,4 +135,55 @@ body {
   font-size: 40px;
   line-height: 48px;
   color: #fff;
+}
+
+.btn-wrapper {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.btn-wrapper .btn-start,
+.btn-wrapper .btn-reset {
+  cursor: pointer;
+  width: 112px;
+  height: 48px;
+  border: 0;
+  background: #324577;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.btn-wrapper .btn-start {
+  margin-right: 10px;
+  background: #5180FF;
+}
+
+.btn-wrapper .btn-start .toggle {
+  background: #15C2B8;
+}
+
+.btn-wrapper .btn-reset {
+  background: #FB7099;
+}
+
+footer {
+  margin-top: 60px;
+}
+
+footer address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #8596bf;
 }
