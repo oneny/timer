@@ -26,7 +26,10 @@ $sec.addEventListener("keyup", () => {
 $btnStart.addEventListener("click", () => {
   if(!time) return alert("시간을 입력하세요");
 
+  $btnStart.classList.add("toggle");
+
   if (id) {
+    $btnStart.classList.remove("toggle");
     clearInterval(id)
     id = null;
     return $btnStart.textContent = "START";
@@ -63,6 +66,7 @@ function updateCountdown() {
 const alertFinish = () => {
   clearInterval(id);
   $btnStart.textContent = "START";
+  $btnStart.classList.remove("toggle");
   return alert("Finish!");
 }
 

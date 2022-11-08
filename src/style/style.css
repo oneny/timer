@@ -163,7 +163,7 @@ body {
   background: #5180FF;
 }
 
-.btn-wrapper .btn-start .toggle {
+.btn-wrapper .btn-start.toggle {
   background: #15C2B8;
 }
 
